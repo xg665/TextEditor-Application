@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             for(int i=0;i<urlList.size();i++){
                 new DownloadFileFromURL().execute(urlList.get(i),fontsList.get(i).url.substring(6)); //Download each font file according to its name
             }
-            Thread.sleep(2000);                                         //Waiting for download to finish before setting adapter
+            Thread.sleep(3000);                                         //Waiting for download to finish before setting adapter
             recyclerView.setAdapter(new FontsRecyclerAdapter(fontsList,fontsNames,this));
     }
     private void showWelcom(){                                              //Show user welcome dialog while waiting download
